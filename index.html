@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>    
+    <div class="container">
+        <h1>Calculadora de notas</h1>
+        <form>
+            <label for="nombre">Nombre Del Estudiante:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="note1" name="note1" placeholder="Esta nota equivale al 30%" required>
+            
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="note2" name="note2" placeholder="Esta nota equivale al 30%" required>
+            
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="note3" name="note3" placeholder="Esta nota equivale al 40%" required>
+            
+            <button id="btn-calculate" type="submit">Calcular Nota</button>
+            <button type="button">Predecir nota</button>
+        </form>
+        <p id="result">El Resultado Es:</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
