@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de notas</title>
 </head>
 <body>    
     <div class="container">
-        <h1>Calculadora de notas</h1>
+        <h1>Calculadora de Desempeño Académico</h1>
         <form>
-            <label for="nombre">Nombre Del Estudiante:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="input-nombre">Nombre del estudiante:</label>
+            <input type="text" id="input-nombre" name="input-nombre" required>
             
-            <label for="nota1">Nota 1:</label>
-            <input type="number" id="note1" name="note1" placeholder="Esta nota equivale al 30%" required>
+            <label for="input-nota1">Primera Nota (30%):</label>
+            <input type="number" id="input-nota1" name="input-nota1" placeholder="Ingresa la nota de la primera evaluación" required>
             
-            <label for="nota2">Nota 2:</label>
-            <input type="number" id="note2" name="note2" placeholder="Esta nota equivale al 30%" required>
+            <label for="input-nota2">Segunda Nota (30%):</label>
+            <input type="number" id="input-nota2" name="input-nota2" placeholder="Ingresa la nota de la segunda evaluación" required>
             
-            <label for="nota3">Nota 3:</label>
-            <input type="number" id="note3" name="note3" placeholder="Esta nota equivale al 40%" required>
+            <label for="input-nota3">Tercera Nota (40%):</label>
+            <input type="number" id="input-nota3" name="input-nota3" placeholder="Ingresa la nota del examen final" required>
             
-            <button id="btn-calculate" type="submit">Calcular Nota</button>
-            <button type="button">Predecir nota</button>
+            <button id="btn-calcular" type="submit">Calcular Desempeño</button>
+            <button id="btn-predecir" type="button">Predecir Nota Final</button>
         </form>
-        <p id="result">El Resultado Es:</p>
+        <p id="resultado-final">El resultado se mostrará aquí: </p>
     </div>
     <script src="app.js"></script>
 </body>
